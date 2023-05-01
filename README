@@ -1,0 +1,25 @@
+CS685 Project
+
+Authors: Ashana Shetty, Jacob Groen, Weisen Zhao
+
+To run our project please download the BERT model ~400mb from this link https://drive.google.com/file/d/1-2y_ufRpGrRNXGQyR-XKYhqQLNzSihpz/view?usp=share_link and put
+the model file into the jackal_helper/src directory
+
+
+Then build the environment using catkin_make and source it with the setup.bash file
+Then you can run the run.py file in the src directory using this comman: python3 run.py --world_idx 0 --gui
+then launch the nlp parser nodes in separate terminals:
+  rosrun jackal_helper subscriber_node.py
+  rosrun jackal_helper publisher_node.py
+  
+The publisher node will prompt you for a speech command, for example "go faster", "go slower", and then absolute parameters, "set maximum velocity to 0.7":
+occdist_scale
+pdist_scale
+max_vel_x
+min_vel_x
+acc_lim_x
+acc_lim_theta
+max_vel_theta
+min_vel_theta
+
+The subscriber node will send parameter updates to the parameter server to update the base local planner

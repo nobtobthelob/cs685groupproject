@@ -2,6 +2,11 @@ CS685 Project
 
 Authors: Ashana Shetty, Jacob Groen, Weisen Zhao
 
+first make a project folder and a src folder and clone this repo into the src folder and clone the jackal files into the src folder as well 
+git clone https://github.com/jackal/jackal.git --branch <YOUR_ROS_VERSION>-devel
+git clone https://github.com/jackal/jackal_simulator.git --branch <YOUR_ROS_VERSION>-devel
+git clone https://github.com/jackal/jackal_desktop.git --branch <YOUR_ROS_VERSION>-devel
+
 To run our project please download the BERT model ~400mb from this link https://drive.google.com/file/d/1-2y_ufRpGrRNXGQyR-XKYhqQLNzSihpz/view?usp=share_link and put
 the model file into the jackal_helper/src directory
 

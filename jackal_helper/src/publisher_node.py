@@ -27,7 +27,7 @@ def publisher_node():
         			continue
 		rospy.loginfo("Publishing message: %s", text)
 
-		model = torch.load('./trained_model_copy',map_location=torch.device('cpu'))
+		model = torch.load('./trained_model_augmentedData',map_location=torch.device('cpu'))
 		model.eval()
 
 		# Apply the tokenizer

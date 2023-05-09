@@ -11,7 +11,7 @@ import re
 def publisher_node():
 	rospy.init_node('publisher_node')
 	pub = rospy.Publisher('my_topic', String, queue_size=10)
-	rate = rospy.Rate(0.1) # Hz
+	rate = rospy.Rate(1) # Hz
 
 	while not rospy.is_shutdown():
 		r = sr.Recognizer()

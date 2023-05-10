@@ -68,12 +68,12 @@ def callback(data):
         rospy.loginfo(f'Updated parameter max_vel_theta from {max_vel_theta} to {max_vel_theta * 0.6}')
         rospy.set_param('/move_base/TrajectoryPlannerROS/min_vel_theta', min_vel_theta * 0.6)
         rospy.loginfo(f'Updated parameter min_vel_theta from {min_vel_theta} to {min_vel_theta * 0.6}')
-    elif value == 5:
+    elif value == 6:
         rospy.set_param('/move_base/TrajectoryPlannerROS/occdist_scale', occdist_scale * 1.5)
         rospy.loginfo(f'Updated parameter occdist_scale from {occdist_scale} to {occdist_scale * 1.5}')
         rospy.set_param('/move_base/TrajectoryPlannerROS/pdist_scale', pdist_scale * 1.5)
         rospy.loginfo(f'Updated parameter pdist_scale from {pdist_scale} to {pdist_scale * 1.5}')
-    elif value == 6:
+    elif value == 5:
         rospy.set_param('/move_base/TrajectoryPlannerROS/occdist_scale', occdist_scale * 0.5)
         rospy.loginfo(f'Updated parameter occdist_scale from {occdist_scale} to {occdist_scale * 0.5}')
         rospy.set_param('/move_base/TrajectoryPlannerROS/pdist_scale', pdist_scale * 0.5)
